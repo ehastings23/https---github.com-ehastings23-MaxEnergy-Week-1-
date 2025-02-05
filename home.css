@@ -1,4 +1,26 @@
 h1{
    margin-bottom: 500px;
-   color: aliceblue;
+   color: rgb(240, 248, 255);
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Space out the items */
+}
+
+.image {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.text {
+    margin-left: 20px; /* Add some space between the text and image */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
