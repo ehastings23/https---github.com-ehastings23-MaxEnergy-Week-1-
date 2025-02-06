@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Energy Home</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="home.css">
-    <script src="./index.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>FAQs - Max Energy</title>
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="faq.css">
 </head>
-
 <body>
+
     <header>
         <nav class="navigation">
             <a href="index.html">Login</a>
@@ -27,4 +30,46 @@
             
         </div>
     </header>
+
+    <section>
+        <h1 class="title">Frequently Asked Questions</h1>
+
+        <div class="questions-container">
+            <div class="question">
+                <button>
+                    <span>What's the best way to study JavaScript?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Start with an online course or interactive tutorials. Platforms like freeCodeCamp, MDN Web Docs, and JavaScript.info are great places to begin.</p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>What should I learn after JavaScript?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Consider learning TypeScript, React, Angular, or Vue for frontend development. If you’re interested in backend, explore Node.js.</p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>Can I get a job after learning JavaScript?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>Yes! JavaScript is one of the most in-demand programming languages. Mastering it can open doors to frontend, backend, and full-stack development roles.</p>
+            </div>
+
+            <div class="question">
+                <button>
+                    <span>How long will it take to learn JavaScript?</span>
+                    <i class="fas fa-chevron-down d-arrow"></i>
+                </button>
+                <p>It depends on your dedication. With consistent learning, you can gain basic proficiency in 3-6 months.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- External JS -->
+    <script src="faq.js"></script>
 </body>
+</html>
