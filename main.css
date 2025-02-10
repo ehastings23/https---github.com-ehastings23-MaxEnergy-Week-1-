@@ -52,6 +52,10 @@ header {
     font-weight: 500;
 }
 
+.navigation a:hover {
+    color: yellow;
+}
+
 .navigation a::after {
     content: '';
     position: absolute;
