@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Max Energy Home</title>
+    <title>Max Energy Contact</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
     <script src="./index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -16,13 +17,56 @@
     <header>
         <nav class="navigation">
             <a href="index.html">Login</a>
-            <a href="homepage.html">Home</a>
             <a href="aboutus.html">About</a>
             <a href="faqpage.html">FAQ</a>
             <a href="data.html">Data</a>
         </nav>
-        <div class="container">
-            <img src="img/maxx potential.PNG" alt="Image" class="image">
-            
+        <div class="logo-container">
+            <img src="img/logo_high_res.png" alt="Maxx Potential Logo" class="logo">
         </div>
+    </header>
+    <div class="glass-table">
+        <h1>Contact Form</h1>
+        <p><div class="container">
+            <form action="/action_page.php">
+              <label for="fname">Full Name </label>
+              <input type="text" id="fname" name="firstname" placeholder="Full Name...">
+          
+              <label for="lname">Email Address</label>
+              <input type="text" id="lname" name="lastname" placeholder="Email..">
+          
+              <label for="country">Phone Number</label>
+              <input type="text" id="lname" name="lastname" placeholder="Phone Number...">
 
+          
+              <label for="subject">Conerns</label>
+              <textarea id="subject" name="subject" placeholder="Message..." style="height:100px"></textarea>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          </p>
+    </div>
+    </head>
+    <footer>
+        <div class="footer-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqpage.html">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Maxx Potential. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+        
+    

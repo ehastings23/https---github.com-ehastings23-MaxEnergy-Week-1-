@@ -13,20 +13,30 @@
     
     <!-- External CSS -->
     <link rel="stylesheet" href="faq.css">
+    <style>
+        .logo-container {
+            position: absolute;
+            top: 5px;
+            right: 30px;
+        }
+        .logo-container .logo {
+            width: 300px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <nav class="navigation">
             <a href="index.html">Login</a>
-            <a href="homepage.html">Home</a>
             <a href="aboutus.html">About</a>
             <a href="contact.html">Contact</a>
+            <a href="register.html">Registration</a>
             <a href="data.html">Data</a>
         </nav>
-        <div class="container">
-            <img src="img/maxx potential.PNG" alt="Image" class="image">
-            
+        <div class="logo-container">
+            <img src="img/logo_high_res.png" alt="Maxx Potential Logo" class="logo">
         </div>
     </header>
 
@@ -36,39 +46,55 @@
         <div class="questions-container">
             <div class="question">
                 <button>
-                    <span>What's the best way to study JavaScript?</span>
+                    <span>How do I setup a account ?</span>
                     <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
-                <p>Start with an online course or interactive tutorials. Platforms like freeCodeCamp, MDN Web Docs, and JavaScript.info are great places to begin.</p>
+                <p>Start by visiting the registration button in the navbar above.</p>
             </div>
 
             <div class="question">
                 <button>
-                    <span>What should I learn after JavaScript?</span>
+                    <span>How do I deactive/delete my account ?</span>
                     <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
-                <p>Consider learning TypeScript, React, Angular, or Vue for frontend development. If you’re interested in backend, explore Node.js.</p>
+                <p>Once logged into your account, there will be a deactive/delete option for your account.</p>
             </div>
 
             <div class="question">
                 <button>
-                    <span>Can I get a job after learning JavaScript?</span>
+                    <span>How do I get in contact with the company ?</span>
                     <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
-                <p>Yes! JavaScript is one of the most in-demand programming languages. Mastering it can open doors to frontend, backend, and full-stack development roles.</p>
+                <p>You can send a message with your concerns and questions to our contact page.</p>
             </div>
 
             <div class="question">
                 <button>
-                    <span>How long will it take to learn JavaScript?</span>
+                    <span>How can I apply for the apprenticeship role ?</span>
                     <i class="fas fa-chevron-down d-arrow"></i>
                 </button>
-                <p>It depends on your dedication. With consistent learning, you can gain basic proficiency in 3-6 months.</p>
+                <p>You can apply inside your user profile.</p>
             </div>
         </div>
     </section>
 
     <!-- External JS -->
     <script src="faq.js"></script>
+    <footer>
+        <div class="footer-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faqpage.html">FAQ</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-social">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+        <p class="footer-text">&copy; 2025 Maxx Potential. All rights reserved.</p>
+    </footer>
 </body>
 </html>

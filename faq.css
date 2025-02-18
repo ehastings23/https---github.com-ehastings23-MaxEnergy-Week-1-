@@ -24,7 +24,8 @@ header {
     top: 0;
     left: 100;
     width: 100%;
-    padding: 20px 100px;
+    padding: 15px 100px;
+    padding: 30px 100px;
     background-color: rgba(172, 10, 10, 0.9);
     display: flex;
     justify-content: left;
@@ -33,11 +34,11 @@ header {
 
 .navigation {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .navigation a {
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -48,12 +49,22 @@ header {
     color: yellow;
 }
 
+
+
+img {
+    position: absolute;
+    right:10px; /* Moves the image 20px from the left of the navbar */ 
+    top: 10px; /* Moves the image 10px from the top of the navbar */
+}
+
+
+
+
 /* FAQ Section */
 .title {
     font-size: 50px;
     text-align: center;
     margin-bottom: 40px;
-    text-decoration: underline 4px white;
 }
 
 .questions-container {
