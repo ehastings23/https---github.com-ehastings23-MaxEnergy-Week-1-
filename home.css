@@ -1,26 +1,160 @@
-h1{
-   margin-bottom: 500px;
-   color: rgb(240, 248, 255);
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.container {
-    display: flex;
-    align-items: center; /* Vertically center the items */
-    justify-content: space-between; /* Space out the items */
-}
-
-.image {
-    max-width: 100%; /* Ensure the image fits within the container */
-    height: auto;
-    flex-shrink: 0; /* Prevent the image from shrinking */
-}
-
-.text {
-    margin-left: 20px; /* Add some space between the text and image */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    background-color: rgb(172, 10, 10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    max-height: 60px;
+    width: auto;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: rgb(11, 11, 10);
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: url(/img/solar-8244679_1280.jpg) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: rgb(206, 2, 2);
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: black;
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features {
+    background: #fff;
+}
+
+.features h2, .testimonials h2, .contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgb(206, 2, 2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(141, 89, 89, 0.1);
+    width: 300px;
+}
+
+.testimonials {
+    background: #f8f9fa;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: rgb(172, 10, 10);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links, .footer-social {
+    margin-bottom: 10px;
+}
+
+.footer-links a, .footer-social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social ion-icon {
+    font-size: 24px;
 }
