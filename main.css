@@ -336,7 +336,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 .footer-social {
@@ -353,7 +353,7 @@ footer {
 }
 
 .footer-social a:hover {
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 
 .footer-text {
