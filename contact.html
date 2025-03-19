@@ -27,25 +27,26 @@
     </header>
     <div class="glass-table">
         <h1>Contact Form</h1>
-        <p><div class="container">
-            <form action="/action_page.php">
-              <label for="fname">Full Name </label>
-              <input type="text" id="fname" name="firstname" placeholder="Full Name...">
-          
-              <label for="lname">Email Address</label>
-              <input type="text" id="lname" name="lastname" placeholder="Email..">
-          
-              <label for="country">Phone Number</label>
-              <input type="text" id="lname" name="lastname" placeholder="Phone Number...">
+        <p>
+        <div class="container">
+            <form action="/api/contact" method="POST">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="fullName" placeholder="Full Name..." required>
 
-          
-              <label for="subject">Conerns</label>
-              <textarea id="subject" name="subject" placeholder="Message..." style="height:100px"></textarea>
-          
-              <input type="submit" value="Submit">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email..." required>
+                <br>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Phone Number..." required>
+
+                <label for="subject">Concerns</label>
+                <textarea id="subject" name="message" placeholder="Message..." style="height:100px" required></textarea>
+
+                <input type="submit" value="Submit">
             </form>
-          </div>
-          </p>
+        </div>
+        </p>
     </div>
     </head>
     <footer>
@@ -63,10 +64,9 @@
             <a href="https://www.linkedin.com" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
         </div>
         <p class="footer-text">&copy; 2025 Maxx Potential. All rights reserved.</p>
-    </div>
-</footer>
+        </div>
+    </footer>
 
 </body>
+
 </html>
-        
-    
